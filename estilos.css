@@ -329,40 +329,7 @@ nav {
     padding-left: 70px;
   }
 
-/*-- Navbar --*/
 
-.menu {
-  display: none;
-}
-
-.icon {
-  display: block;
-  cursor: pointer;
-  font-size: 1em;
-  padding-top: 10px;
-}
-
-.menu.active {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  align-items: center;
-  top: 612px;
-  left: 0;
-  width: 100%;
-  background-color: var(--gris-fondo);
-  z-index: 1;
-}
-
-.menu.active li {
-  margin: 10px 0;
-  text-align: center;
-}
-
-.menu.active a {
-  color: var(--color-verde);
-  padding: 10px;
-}
 
 /*-- Sección Quienes somos --*/
 .qs-text {
@@ -422,4 +389,103 @@ nav {
  .comenzar-text p {
   width: 300px;
  }
+}
+
+/* Media Query para pantallas más pequeñas, como teléfonos móviles */
+@media (max-width: 768px) {
+
+  /*-- Navbar --*/
+
+.menu {
+  display: none;
+}
+
+.icon {
+  display: block;
+  cursor: pointer;
+  font-size: 1em;
+  padding-top: 10px;
+}
+
+.menu.active {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  align-items: center;
+  top: 532px;
+  left: 0;
+  width: 100%;
+  background-color: var(--gris-fondo);
+  z-index: 1;
+}
+
+.menu.active li {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.menu.active a {
+  color: var(--color-verde);
+  padding: 10px;
+}
+
+/*-- Seccion intro --*/
+
+.intro {
+  height: 120vw;
+  padding-top: 30px;
+}
+
+.container-intro {
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+  padding: 0;
+}
+
+.box-intro {
+  gap: 1.5em;
+  align-items: center;
+}
+
+.box-intro img {
+  width: 50%;
+}
+
+.box-text {
+  padding-left: 0;
+  padding-bottom: 10px;
+}
+
+.p1 {
+  font-size: 1.4em;
+}
+
+.p2 {
+  font-size: 1.3em;
+  padding: 0px 15px;
+}
+
+.b1 {
+  font-size: 1.3em;
+}
+
+.p3 {
+  font-size: 1.4em;
+}
+
+.box-intro a {
+  font-size: 14px;
+  padding-left: 80px;
+}
+
+/*-- Menu Responsive (Logo, Nombre y Menu) --*/
+
+.navbar {
+  align-items: center;
+}
+
+.navbar span {
+  font-size: 14px;
+}
 }
